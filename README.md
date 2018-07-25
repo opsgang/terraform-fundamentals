@@ -5,11 +5,11 @@
 > Dive in to using Terraform to provision AWS resources.
 >
 
-## What is and Why Terraform?
+## Why We Use Terraform
 
 ### What?
 
-    * IaC - governance, repeatability
+    * IaC - audit, governance, repeatability, versioning etc ...
 
     * Infrastructure | Platform provisioning
         ... not really for OS / app level configuration
@@ -27,4 +27,23 @@
 
 See [post by gruntworks.io][1] for thorough explanation and comparison.
 
-## 01. Resources
+## NOTES TO INSTRUCTOR
+
+To complete this tutorial you need an AWS account with:
+
+* a public subnet (for spinning up the EC2 resources)
+
+* a route53 public hosted zone
+
+* an pre-created S3 bucket for storing terraform state.
+
+Fork this repo.
+
+Edit the setenv file with your vals.
+
+> Make sure you have gettext installed (provides the `envsubst` command).
+
+Before the lesson, source the setenv script to set the correct vals
+in the code.
+
+Commit and push back to your fork, or distribute to students in some other way.

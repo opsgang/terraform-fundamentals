@@ -1,0 +1,12 @@
+# instructor MUST replace all vals with their own, and source file before lesson.
+
+# ... for student's statefiles
+export _S3_TFSTATE=terraform-fundamentals
+
+# ... subnet on which to create resources
+export _SUBNET_ID=subnet-12345a12
+
+# ... for creating PUBLIC student route53
+export _HOSTED_ZONE_ID=Z1XXXXXXXXXXXX
+# ... DNS domain for that
+export _HOSTED_ZONE_DOMAIN=foo.com
