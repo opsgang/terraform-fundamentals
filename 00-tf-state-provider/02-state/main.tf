@@ -16,7 +16,7 @@ terraform {
 
         region = "eu-west-1" # for step 2, delete this line.
         # For step 1 use your name instead of mine!
-        key    = "/dev/jin.tfstate" # delete this line for step 2.
+        key    = "dev/jin.tfstate" # delete this line for step 2.
     }
 }
 
@@ -25,7 +25,8 @@ terraform {
 # Amend your tf_run alias to pass the cfg to terraform init.
 # ... the flag is -backend-config, specified once per key/val pair
 # ... the value is "key=val"
-# e.g. terraform init -backend-config="region=eu-west-1"
+# e.g. terraform init -backend-config="region=eu-west-1" \
+#                     -backend-config="dev/jin.tfstate"
 
 # Now amend the backend block above as instructed (delete the region and key lines)
 

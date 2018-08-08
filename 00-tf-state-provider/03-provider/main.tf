@@ -23,5 +23,9 @@ terraform {
 provider "aws" {
 }
 
+# provider has a version attribute, recommended for immature plugins.
+# AWS is pretty mature, though its probably best to peg to the latest major version.
+# e.g.
+#   version = "~> 1"
 #
 # copyright Opsgang 2018

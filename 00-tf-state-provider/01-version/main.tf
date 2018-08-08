@@ -30,7 +30,7 @@ terraform {
 # 3. SPECIFYING VERSION
 # ... add the line below to the terraform block and re-run the mantra.
 #
-#    required_version = "~> 0.10" # where 0.10.0 <= version < 0.11.0
+#    required_version = "~> 1.10" # where 0.10.0 <= version < 0.11.0
 
 # ... it'll blow up as constraint not met.
 
